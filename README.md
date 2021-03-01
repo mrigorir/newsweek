@@ -40,9 +40,8 @@
 
 👤 **John Arboleda**
 
-- GitHub: [@vitorelourenco](https://github.com/vitorelourenco/)
-- Twitter: [@Vitorel](https://twitter.com/Vitorel)
-- LinkedIn: [vitoremanuellourenco](https://www.linkedin.com/in/vitoremanuellourenco/)
+- GitHub: [@John-Arboleda](https://github.com/John-Arboleda)
+- LinkedIn: [@john-jairo-arboleda-castillo](https://www.linkedin.com/in/john-jairo-arboleda-castillo/)
 
 
 ## 🤝 Contributing
