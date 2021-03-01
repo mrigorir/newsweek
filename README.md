@@ -12,7 +12,7 @@
 
 - HTML5, CSS3
 - Bootstrap
-- Windows
+- Windows/Linux
 
 
 ## Live Demo
