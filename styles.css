@@ -15,10 +15,13 @@ a {
   color: inherit;
 }
 
-/* I changed here */
 body {
   background-color: #f4f5f6;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider {
+  border-top: solid 4px #ccc;
 }
 
 img.position-absolute {
@@ -28,7 +31,11 @@ img.position-absolute {
   height: 13rem;
 }
 
-nav {
+nav,
+.main-titles,
+.ups,
+.debate-title,
+.debate-text {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -172,6 +179,66 @@ ul {
   color: white;
 }
 
+/* Main columns */
+
+.img span {
+  position: relative;
+  top: -25px;
+  font: bold 17px/16px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: rgba(255,255,255,.9);
+}
+
+.img-fluidd {
+  object-fit: cover;
+}
+
+.roow {
+  border-bottom: 3px rgb(179, 179, 179) solid;
+}
+
+.roow :first-child {
+  margin-right: 5px;
+}
+
+.ups {
+  top: -17px;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin: 6px auto;
+  border-radius: 50%;
+  padding: 7px;
+  letter-spacing: 1px;
+}
+
+.main-titles {
+  font-size: 16px;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.debate-title {
+  font-size: 17px;
+  color: #000;
+}
+
+.debate-text {
+  color: #555;
+  font-size: 14px;
+}
+
+.minus {
+  margin-top: -30px;
+}
+
 /* Footer */
 
 .copyright-line {
@@ -191,6 +258,73 @@ ul {
   color: #999;
   font-size: 28px;
   margin: 0 5px 0 5px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  main {
+    margin: 0;
+  }
+
+  .top-story1 {
+    display: none;
+  }
+
+  .top-story2 {
+    display: block;
+  }
+
+  .colu {
+    flex-flow: row;
+  }
+
+  img.position-absolute {
+    left: 50px;
+    top: 110px;
+    z-index: 0;
+    height: 13rem;
+  }
+
+  .fa-user {
+    display: none;
+  }
+
+  .nav1 form a {
+    display: inline;
+  }
+
+  .gathering {
+    width: 100%;
+  }
+
+  .center {
+    position: sticky;
+    width: 55%;
+    margin: 15px;
+  }
+
+  .left {
+    width: 35%;
+    margin: 15px;
+  }
+
+  .cardss {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .pics {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .pic {
+    width: 30%;
+  }
+
+  .navbar-toggler-icon {
+    display: none;
+  }
 }
 
 /* desktop */
@@ -250,3 +384,4 @@ ul {
     display: none;
   }
 }
+
