@@ -110,6 +110,7 @@ nav button {
   height: 100px;
   padding: 5px;
   margin-right: 8px;
+  aspect-ratio: auto 1 / 1;
 }
 
 .nav2 form img {
@@ -231,6 +232,11 @@ ul {
 .main-titles {
   font-size: 16px;
   color: rgba(3, 3, 3, 0.4);
+}
+
+.article-title {
+  font-size: 21px;
+  line-height: 23px;
 }
 
 .debate-title {
