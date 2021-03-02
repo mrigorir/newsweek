@@ -24,6 +24,14 @@ body {
   border-top: solid 4px #ccc;
 }
 
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
 img.position-absolute {
   left: 130px;
   top: 90px;
@@ -226,13 +234,13 @@ ul {
 }
 
 .debate-title {
-  font-size: 17px;
+  font-size: 15px;
   color: #000;
 }
 
 .debate-text {
   color: #555;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .minus {
