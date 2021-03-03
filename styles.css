@@ -435,6 +435,14 @@ ul {
   .navbar-toggler-icon {
     display: none;
   }
+
+  .btm-img-cont {
+    height: 80%;
+  }
+
+  .btm-img {
+    object-fit: cover;
+  }
 }
 
 /* desktop */
