@@ -15,6 +15,7 @@
 </head>
 
 <body>
+ <header>
   <nav class="navbar nav1 navbar-dark font-weight-bold py-1 fixed-top">
     <a class="navbar-brand" href="#">Newsweek</a>
     <form class="form-inline">
@@ -54,8 +55,8 @@
         </li>
       </ul>
     </nav>
-    <nav class="nav4 container m-auto p-1 py-3 d">
-      <ul class="mb-0 d-flex justify-content-start mr-5">
+    <nav class="nav4 container m-auto p-1 py-2">
+      <ul class="mb-0 d-flex justify-content-start flex-wrap mr-5">
         <li><a href="#">TRENDING</a></li>
         <li><a href="#">JOE BIDEN</a></li>
         <li><a href="#">DONALD TRUMP</a></li>
@@ -66,8 +67,9 @@
         <li><a href="#">CAPITOL RIOTS</a></li>
       </ul>
     </nav>
+ </header>
     <!-- Main body -->
-    <main class="container-lg minus bg-white">
+    <main class="container-lg bg-white pad">
       <!-- First section -->
       <section class="section-1">
         <div class="content">
@@ -159,8 +161,11 @@
 
              </div>
               <!-- Rankings/Sponsored insight -->
-              <h3 class="c-blue ml-3 mt-3">sponsored insight</h3>
-              <div class="border mb-3 pt-3 ranking">
+              <div class="border mb-3 mt-4">
+                <div class="img">
+                  <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1701186/ph3095-01.jpg?w=500&h=333&f=b8162daf93e087918df15d58a79bfc35" alt="image" />
+                  <span class="ranking text-primary">sponsored insight</span>
+                </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
                     <a href="#">Hokkaido: Japan’s Northern Frontier</a>
@@ -172,21 +177,27 @@
                   </p>
                 </div>
               </div>
-              <h3 class="c-blue ml-3 mt-3">sponsored insight</h3>
-              <div class="border mb-3 pt-3 ranking">
+              <div class="border mb-3 mt-4">
+                <div class="img">
+                  <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1677235/american-school-doha.jpg?w=500&h=333&f=dc8bef3e2240004c9f605c245b05c06e" alt="image" />
+                  <span class="ranking text-primary">sponsored insight</span>
+                </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
                     <a href="#">What Makes International Schools so Special?</a>
                   </h5>
                   <p class="debate-card-text">
-                    One of the single most important decisions you make for your 
+                    ne of the single most important decisions you make for your 
                     child is whom to entrust with their education. See why so many 
                     parents are turning to International Schools.
                   </p>
                 </div>
               </div>
-              <h3 class="c-blue ml-3 mt-3">rankings</h3>
-              <div class="border mb-3 pt-3 ranking">
+              <div class="border mb-3 mt-4">
+                <div class="img">
+                  <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0" alt="image" />
+                  <span class="ranking text-primary">sponsored insight</span>
+                </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
                     <a href="#">America's Most Responsible Companies 2021</a>
@@ -198,8 +209,11 @@
                   </p>
                 </div>
               </div>
-              <h3 class="c-blue ml-3 mt-3">sponsored insight</h3>
-              <div class="border mb-3 pt-3 ranking">
+              <div class="border mb-3 mt-4">
+                <div class="img">
+                  <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1638920/image-3-this-startup-making.jpg?w=500&h=333&f=d3ab894bb4a4f0a8af53551fabfb306d" alt="image" />
+                  <span class="ranking text-primary">sponsored insight</span>
+                </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
                     <a href="#">This Startup Is Making Long Distance Real Estate Investing Possible for Millennials</a>
@@ -210,7 +224,6 @@
                 </div>
               </div>
             </div>
-
             <!-- center -->
             <div class="center d-inline-flex flex-column-reverse flex-md-column pt-5">
               <div class="top-story2">
@@ -220,71 +233,84 @@
                     <img class="w-100" src="https://d.newsweek.com/en/full/1711649/biden-speaks-delaware.webp" alt="image" />
                     <span>POLITICS</span>
                   </div>
-                  <a href=# ><h5 class=article-title>
+                  <h5 class="featured-stories-title">
+                    <a href="#">
                     Joe Biden's First Executive Actions Undo Many of Donald Trump's
-                  </h5></a>
+                    </a>
+                  </h5>
                   <p class="article-summary-text text-dark">
                     Actions related to the COVID-19 crisis, climate change and racial equality are to be among the first taken as he begins his tenure.
                   </p>
                 </div>
               </div>
-
               <div class="middle-center-container mt-3 mt-md-2">
                 <h6 class="main-titles">MY TURN</h6>
-                <div class="pics d-flex flex-column mt-3 mt-md-2 flex-md-row justify-content-between">
-                  <div class="pic">
+                <div class="pics row d-flex flex-column mt-3 mt-md-2 flex-md-row justify-content-between">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1710127/marriage-same-sex-marriage-best-friends.webp" alt="same-sex-marriage" />
+                      <img class="w-100 my-turn__img" src="https://d.newsweek.com/en/full/1710127/marriage-same-sex-marriage-best-friends.webp" alt="same-sex-marriage" />
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
-                      'I Married My Best Friend to Avoid Inheritance Tax'
-                    </p></a>
+                    <p class="debate-text text-secondary mt-1 mt-1 font-weight-bold">
+                      <a href="#" class="my-turn__links text-decoration-none">
+                        'I Married My Best Friend to Avoid Inheritance Tax'
+                      </a>
+                    </p>
                   </div>
-                  <div class="pic">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1709421/dogs-special-needs-rescue-rescue-dogs.jpg" alt="girl-w-dogs" />
+                      <img class="w-100 my-turn__img" src="https://d.newsweek.com/en/full/1709421/dogs-special-needs-rescue-rescue-dogs.jpg" alt="girl-w-dogs" />
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
-                      'I've Rescued Hundreds of Special Needs Dogs'
-                    </p></a>
+                    <p class="debate-text text-secondary mt-1 font-weight-bold">
+                      <a href="#" class="my-turn__links text-decoration-none">
+                        'I've Rescued Hundreds of Special Needs Dogs'
+                      </a>
+                    </p>
                   </div>
-                  <div class="pic">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1705436/nick-ut-presidential-medal-freedom-photographer.jpg" alt="astronaut-trump-medal" />
+                      <img class="w-100 my-turn__img" src="https://d.newsweek.com/en/full/1705436/nick-ut-presidential-medal-freedom-photographer.jpg" alt="astronaut-trump-medal" />
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
-                      Why I Accepted Trump's Medal Of Arts
-                    </p></a>
+                    <p class="debate-text text-secondary mt-1 font-weight-bold">
+                      <a href="#" class="my-turn__links text-decoration-none">
+                        Why I Accepted Trump's Medal Of Arts
+                      </a>
+                    </p>
                   </div>
                 </div>
                 <h6 class="main-titles">CULTURE & TRAVEL</h6>
-                <div class="pics d-flex flex-column mt-3 flex-md-row justify-content-between">
-                  <div class="pic">
+                <div class="pics row d-flex flex-column mt-3 flex-md-row justify-content-between">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1697308/cul-map-happiness-finland.jpg" alt="happiness-world" />
+                      <img class="w-100 my-turn__img" src="https://d.newsweek.com/en/full/1697308/cul-map-happiness-finland.jpg" alt="happiness-world" />
                       <span class="text-dark font-weight-bold">TRAVEL</span>
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
+                    <p class="debate-text text-secondary font-weight-bold m-less">
+                     <a href="#" class="my-turn__links text-decoration-none">
                       The Secrets to Happiness Around the World
-                    </p></a>
+                     </a>
+                    </p>
                   </div>
-                  <div class="pic">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1691685/uncharted-eco-camp-patagonia.jpg" alt="dreaming-travel-2021" />
+                      <img class="w-100 my-turn__img" src="https://d.newsweek.com/en/full/1691685/uncharted-eco-camp-patagonia.jpg" alt="dreaming-travel-2021" />
                       <span class="text-dark font-weight-bold">TRAVEL</span>
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
-                      Where We Are Dreaming of Traveling in 2021
-                    </p></a>
+                      <p class="debate-text text-secondary font-weight-bold m-less">
+                        <a href="#" class="my-turn__links text-decoration-none">
+                          Where We Are Dreaming of Traveling in 2021
+                        </a>
+                      </p>
                   </div>
-                  <div class="pic">
+                  <div class="col-md-4">
                     <div class="mid-cntr-img">
-                      <img class="w-100" src="https://d.newsweek.com/en/full/1697359/top-100-songs-2020.jpg" alt="top-100-songs" />
+                      <img class="w-100 my-turn__img img" src="https://d.newsweek.com/en/full/1697359/top-100-songs-2020.jpg" alt="top-100-songs" />
                       <span class="text-dark font-weight-bold">MUSIC</span>
                     </div>
-                    <a href=#><p class="debate-title text-secondary font-weight-bold">
-                      These Are the Top 100 Songs of 2020
-                    </p></a>
+                      <p class="debate-text text-secondary font-weight-bold m-less">
+                      <a href="#" class="my-turn__links text-decoration-none">
+                        These Are the Top 100 Songs of 2020
+                      </a>
+                      </p>
                   </div>
                 </div>
               </div>
@@ -299,7 +325,7 @@
                     <img src="img/main/mr-1-biden-challenge.png" alt="biden-challenge" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Biden's Biggest Challenge? 67,000 Migrants Stranded at U.S.-Mexico Border
                         </a>
                       </h5>
@@ -312,7 +338,7 @@
                     <img src="img/main/mr-2-evangelical-police.png" alt="image" />
                     <div>
                     <h5 class="debate-title">
-                      <a href=#> Evangelicals, Police, Who Disliked Trump Immigration Policy May Back Reform</a>
+                      <a href="#"> Evangelicals, Police, Who Disliked Trump Immigration Policy May Back Reform</a>
                     </h5>
                       <p class="article-summary-text text-dark">
                         Religious conservatives and law-enforcement officers who were uncomfortable with family separations may be open to immigration reform.
@@ -323,7 +349,7 @@
                     <img src="img/main/mr-3-trump-pardons.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Donald Trump Pardons Israeli Spy Handler Who Paid for American Secrets
                         </a>
                       </h5>
@@ -336,7 +362,7 @@
                     <img src="img/main/mr-4-biden-first-day.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Joe Biden's Schedule for His First Day As President
                       </a>
                       </h5>
@@ -349,7 +375,7 @@
                     <img src="img/main/mr-5-russia-phones.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         U.S. Cut Russia Consulate Phones Before Trump's Last Day, Moscow Claims
                       </a>
                       </h5>
@@ -362,7 +388,7 @@
                     <img src="img/main/mr-6-mississipi-abortion.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Mississippi Bill Classifying Abortions as Murder Introduced by GOP Lawmaker
                       </a>
                       </h5>
@@ -375,7 +401,7 @@
                     <img src="img/main/mr-7-john-katko.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         GOP Rep. John Katko Says Capitol Riots 'Worse Than People Realized'
                       </a>
                       </h5>
@@ -388,7 +414,7 @@
                     <img src="img/main/mr-8-ossoff-warnock.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Jon Ossoff, Raphael Warnock Certified by Georgia as Senate Runoff Winners
                       </a>
                       </h5>
@@ -401,7 +427,7 @@
                     <img src="img/main/mr-9-lauren-boebert.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Lauren Boebert Rejects Claims She Gave Rioters Capitol Tour
                       </a>
                       </h5>
@@ -414,7 +440,7 @@
                     <img src="img/main/mr-10-trump-allies.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Trump Allies Await Pardons News as Clock Ticks Down on Presidential Powers
                       </a>
                       </h5>
@@ -427,7 +453,7 @@
                     <img src="img/main/mr-11-national-guard.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         National Guard Activated in 30 States Over Fears of Inauguration Violence 
                         </a>
                       </h5>
@@ -440,7 +466,7 @@
                     <img src="img/main/mr-12-christian-crosshairs.png" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                         Christians in Crosshairs After Capitol Riot
                       </a>
                       </h5>
@@ -459,7 +485,7 @@
                     <img class="img-fluid" width="95" height="95" src="https://d.newsweek.com/en/full/1630856/cobra-kai-karate-kid-sequel.webp?w=95&amp;h=95&amp;l=49&amp;t=19&amp;" alt="biden-challenge" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           'Cobra Kai' Season 4 Expected to Start Shooting Today
                         </a>
                       </h5>
@@ -472,7 +498,7 @@
                     <img src="https://d.newsweek.com/en/full/1711659/qanon-slogan-rally.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Fake Gen. Hyten Telegram Channel Spreads Qanon Slogans Before Inauguration
                         </a>
                       </h5>
@@ -485,7 +511,7 @@
                     <img src="https://d.newsweek.com/en/full/1711655/mypillow-mike-lindell-donald-trump.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           MyPillow Products Dropped Because of Poor Sales Not Politics, Stores Say
                         </a>
                       </h5>
@@ -498,7 +524,7 @@
                     <img src="https://d.newsweek.com/en/full/1711661/us-president-donald-trump.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Trump's Pardon List Leaves Off Snowden, Assange and Winner
                         </a>
                       </h5>
@@ -511,7 +537,7 @@
                     <img src="https://d.newsweek.com/en/full/1711653/ncis-gibbs-shot-mcgee.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           'NCIS' Season 18 Reveals Why Gibbs Shot McGee
                         </a>
                       </h5>
@@ -524,7 +550,7 @@
                     <img src="https://d.newsweek.com/en/full/1711650/kodak-black.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Kodak Black Pardoned by Trump Two Months After $1 Million Charity Pledge
                         </a>
                       </h5>
@@ -537,7 +563,7 @@
                     <img src="https://d.newsweek.com/en/full/1711602/matt-gaetz-house-judiciary-subcommittee.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Trump Ally Gaetz Wants More GOP Leaders With Outgoing President's 'Spirit'
                         </a>
                       </h5>
@@ -550,7 +576,7 @@
                     <img src="https://d.newsweek.com/en/full/1711644/javits-center-nyc-covid-vaccination-site-2021.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           These Places Are Running Out of COVID Vaccines in the U.S.
                         </a>
                       </h5>
@@ -563,7 +589,7 @@
                     <img src="https://d.newsweek.com/en/full/1711622/meghan-markle-attends-remembrance-westminster-abbey.jpg" alt="image" />
                     <div>
                       <h5 class="debate-title">
-                        <a href=#>
+                        <a href="#">
                           Meghan Markle Details Leaked to U.K. Tabloid by 'High-Grade' Royal Source
                         </a>
                       </h5>
@@ -594,7 +620,7 @@
               </div>
             </div>
             <div class="d-inline-block text-center">
-              <span class="rounded-circle position-relative ups">
+              <span class="rounded-circle ups">
                 VS
               </span>
             </div>
@@ -711,7 +737,7 @@
               <div class="border mb-3">
                 <div class="img">
                   <img class="w-100" src="https://d.newsweek.com/en/full/1710394/hungary-picture.jpg?w=500&h=333&f=d42c219d6231b1b93354974ad594869a" alt="image" />
-                  <span class="c-blue">sponsored insight</span>
+                  <span class="ranking text-primary">sponsored insight</span>
                 </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
@@ -743,7 +769,7 @@
               <div class="border mb-3 mt-4">
                 <div class="img">
                   <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1708929/panama-online-photo.jpg?w=500&h=333&f=61184ec0c9ac388d6550edc3a27e123d" alt="image" />
-                  <span class="c-blue">sponsored insight</span>
+                  <span class="ranking text-primary">sponsored insight</span>
                 </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
@@ -757,7 +783,7 @@
               <div class="border mb-5 mt-4">
                 <div class="img">
                   <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1680462/american-heritage-school.jpg?w=500&h=333&f=5f21b07620b0d3097fb92204c43a9b30" alt="image" />
-                  <span class="c-blue">sponsored insight</span>
+                  <span class="ranking text-primary">sponsored insight</span>
                 </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
@@ -770,22 +796,22 @@
                   </p>
                 </div>
               </div>
-              <h3 class="c-blue ml-3">rankings</h3>
-              <div class="border mb-3 pt-3 ranking">
+              <div class="border mb-3 mt-4">
+                <div class="img">
+                  <img class="w-100" src="https://web.archive.org/web/20210120125445if_/https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&h=333&f=111d8839cccafaae6c19be7a5c9267ce" alt="image" />
+                  <span class="ranking text-primary">rankings</span>
+                </div>
                 <div class="pl-3 pr-2">
                   <h5 class="debate-card-title">
                     <a href="#">America's Best Nursing Homes 2021</a>
                   </h5>
                   <p class="debate-card-text">
-                    In partnership with Statista, we established a
-                    ranking providing information and insights to help you 
-                    during this challenging time.
+                    In partnership with Statista, we established a ranking providing information and insights to help you during this challenging time.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Footer -->
           <footer class="mt-5 bg-red col-md-12 bg-white footer">
             <div class="">
