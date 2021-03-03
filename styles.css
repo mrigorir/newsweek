@@ -43,12 +43,11 @@ nav,
 .main-titles,
 .ups,
 .debate-title,
-.debate-text {
+.debate-text,
+.debate-card-title,
+.newsletter-title,
+.featured-stories-title {
   font-family: 'Roboto Condensed', sans-serif;
-}
-
-.date {
-  font-size: 16px;
 }
 
 nav a {
@@ -192,11 +191,15 @@ ul {
 .img span {
   position: relative;
   top: -25px;
-  font: bold 17px/16px "Roboto Condensed", sans-serif;
   color: #f72210;
-  text-transform: uppercase;
   padding: 8px 15px 9px;
   background-color: rgba(255,255,255,.9);
+}
+
+.img span,
+.c-blue {
+  font: bold 15px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 .img-fluidd {
@@ -247,6 +250,56 @@ ul {
   margin-top: -30px;
 }
 
+.debate-card-title {
+  font-size: 20px;
+  color: black;
+}
+
+.debate-card-text {
+  color: #333;
+  font-size: 13px;
+}
+
+.debate-title a:hover,
+.debate-card-title a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: #f72210 !important;
+  color: black;
+}
+
+#mini-newsletter {
+  background-color: #f4f5f6;
+  padding: 20px 20px 5px 20px;
+  border: solid 1px #ddd;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.newsletter-icon {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url('https://web.archive.org/web/20210120125445im_/https://g.newsweek.com/www/images/logo-n1.svg') center/contain no-repeat #f72210;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
+.newsletter-title {
+  color: #333;
+  font-size: 16px;
+}
+
+.newsletter-submit {
+  background-color: #f61602;
+  padding: 3px 10px;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.c-blue {
+  color: #3581f4 !important;
+}
 /* Footer */
 
 .copyright-line {
@@ -266,6 +319,31 @@ ul {
   color: #999;
   font-size: 28px;
   margin: 0 5px 0 5px;
+}
+
+.featured-stories-title {
+  color: #000;
+  font-size: 20px;
+}
+
+.featured-stories-text {
+  color: #333;
+  font-size: 12px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .section-1 {
+    margin-top: 50px;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    display: grid;
+    grid-template-areas: 'item3 item1 item2';
+  }
 }
 
 /* tablet */
@@ -300,7 +378,7 @@ ul {
   .nav1 form a {
     display: inline;
   }
-
+  
   .gathering {
     width: 100%;
   }
