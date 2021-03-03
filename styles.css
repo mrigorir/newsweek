@@ -40,6 +40,7 @@ img.position-absolute {
 }
 
 nav,
+.article-title,
 .main-titles,
 .ups,
 .debate-title,
@@ -155,6 +156,13 @@ ul a {
   margin: 0 7px 0 7px;
 }
 
+.debate-title a:hover,
+.debate-card-title a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: #f72210 !important;
+  color: black;
+}
+
 .nav4 ul :first-child a {
   color: black;
 }
@@ -188,18 +196,25 @@ ul {
 
 /* Main columns */
 
-.img span {
+.img span,
+.mid-cntr-img span {
   position: relative;
   top: -25px;
   color: #f72210;
   padding: 8px 15px 9px;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .img span,
 .c-blue {
   font: bold 15px/16px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
+}
+
+.mid-cntr-img span {
+  background-color: #c2d4d7;
+  padding: 2px 6px;
+  font-size: 11px;
 }
 
 .img-fluidd {
@@ -221,7 +236,6 @@ ul {
   height: 32px;
   background-color: #000;
   color: #d6d6d6;
-  border-radius: 50%;
   font-weight: bold;
   font-size: 12px;
   text-align: center;
@@ -234,6 +248,16 @@ ul {
 .main-titles {
   font-size: 16px;
   color: rgba(3, 3, 3, 0.4);
+}
+
+.article-title {
+  font-size: 21px;
+  line-height: 23px;
+}
+
+.article-summary-text {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .debate-title {
@@ -258,13 +282,6 @@ ul {
 .debate-card-text {
   color: #333;
   font-size: 13px;
-}
-
-.debate-title a:hover,
-.debate-card-title a:hover {
-  text-decoration: underline !important;
-  text-decoration-color: #f72210 !important;
-  color: black;
 }
 
 #mini-newsletter {
@@ -300,6 +317,7 @@ ul {
 .c-blue {
   color: #3581f4 !important;
 }
+
 /* Footer */
 
 .copyright-line {
@@ -333,16 +351,15 @@ ul {
 
 /* Mobile */
 
+@media screen and (max-width: 420px) {
+  .ups {
+    left: 126px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-1 {
     margin-top: 50px;
-  }
-
-  .item1,
-  .item2,
-  .item3 {
-    display: grid;
-    grid-template-areas: 'item3 item1 item2';
   }
 }
 
@@ -378,7 +395,7 @@ ul {
   .nav1 form a {
     display: inline;
   }
-  
+
   .gathering {
     width: 100%;
   }
@@ -387,6 +404,21 @@ ul {
     position: sticky;
     width: 55%;
     margin: 15px;
+  }
+
+  .pic {
+    width: 30%;
+  }
+
+  .mid-cntr-img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .mid-cntr-img > img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
   }
 
   .left {
@@ -402,10 +434,6 @@ ul {
   .pics {
     flex-flow: row;
     flex-wrap: wrap;
-  }
-
-  .pic {
-    width: 30%;
   }
 
   .navbar-toggler-icon {
@@ -462,12 +490,7 @@ ul {
     flex-wrap: wrap;
   }
 
-  .pic {
-    width: 30%;
-  }
-
   .navbar-toggler-icon {
     display: none;
   }
 }
-
