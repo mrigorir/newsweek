@@ -40,6 +40,7 @@ img.position-absolute {
 }
 
 nav,
+.article-title,
 .main-titles,
 .ups,
 .debate-title,
@@ -190,7 +191,8 @@ ul {
 
 /* Main columns */
 
-.img span {
+.img span,
+.mid-cntr-img span {
   position: relative;
   top: -25px;
   font: bold 17px/16px "Roboto Condensed", sans-serif;
@@ -198,6 +200,12 @@ ul {
   text-transform: uppercase;
   padding: 8px 15px 9px;
   background-color: rgba(255,255,255,.9);
+}
+
+.mid-cntr-img span {
+  background-color: #c2d4d7;
+  padding: 2px 6px;
+  font-size: 11px;
 }
 
 .img-fluidd {
@@ -237,6 +245,11 @@ ul {
 .article-title {
   font-size: 21px;
   line-height: 23px;
+}
+
+.article-summary-text {
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .debate-title {
@@ -317,6 +330,22 @@ ul {
     margin: 15px;
   }
 
+  .pic {
+    width: 30%;
+  }
+  
+  .mid-cntr-img {
+    width: 100%;
+    aspect-ratio: auto 1 / 1;
+    overflow: hidden;
+  }
+
+  .mid-cntr-img > img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
+
   .left {
     width: 35%;
     margin: 15px;
@@ -330,10 +359,6 @@ ul {
   .pics {
     flex-flow: row;
     flex-wrap: wrap;
-  }
-
-  .pic {
-    width: 30%;
   }
 
   .navbar-toggler-icon {
@@ -388,10 +413,6 @@ ul {
   .pics {
     flex-flow: row;
     flex-wrap: wrap;
-  }
-
-  .pic {
-    width: 30%;
   }
 
   .navbar-toggler-icon {
