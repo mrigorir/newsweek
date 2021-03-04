@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link]([Live Demo Link]https://mrigorir.github.io/newsweek/)
+[Live Demo Link](Live Demo Link]https://mrigorir.github.io/newsweek/)
 
 
 ### Deployment
