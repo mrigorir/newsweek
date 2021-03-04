@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://maha-magdy.github.io/The-Next-Web-home/)
+[Live Demo Link](https://mrigorir.github.io/newsweek/)
 
 
 ### Deployment
