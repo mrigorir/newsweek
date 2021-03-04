@@ -365,7 +365,7 @@ ul {
 }
 
 .cover-news__link {
-  font: bold 15px/26px "Roboto Condensed",sans-serif;
+  font: bold 15px/26px "Roboto Condensed", sans-serif;
   color: #f72210;
   text-transform: uppercase;
   margin-top: 10px;
@@ -375,37 +375,6 @@ ul {
 .cover-news__link:hover {
   color: #f61602;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 
