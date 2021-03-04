@@ -24,6 +24,10 @@ body {
   border-top: solid 4px #ccc;
 }
 
+.soft-divider {
+  border-top: solid 1px #ccc;
+}
+
 .font-size-12 {
   font-size: 12px;
 }
@@ -55,7 +59,10 @@ nav,
 .debate-text,
 .debate-card-title,
 .newsletter-title,
-.featured-stories-title {
+.featured-stories-title,
+.magazine-main-title,
+.cover,
+.starting-title {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -115,7 +122,7 @@ nav button {
 .pic2 img {
   width: 100px;
   height: 100px;
-  padding: 5px;
+  padding: 4px;
   margin-right: 8px;
 }
 
@@ -330,6 +337,78 @@ ul {
   color: rgba(3, 3, 3, 0.5);
 }
 
+/* Magazine sections */
+
+.magazine-main-title {
+  color: #333;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.bg-gray {
+  background-color: #f4f5f6;
+}
+
+.cart-text-content {
+  margin-top: -15px;
+}
+
+.img span.text-overlay {
+  top: -29.5px;
+}
+
+.cover {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+.cover-news__link {
+  font: bold 15px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cover-news__link:hover {
+  color: #f61602;
+}
+
+.btn-free {
+  font-size: 12px;
+  background-color: #f72210;
+  border-radius: 0;
+}
+
+.suscribe-input {
+  border-radius: 0;
+}
+
+.starting-cover {
+  border: solid 1px #eee;
+}
+
+.starting-title {
+  color: #000;
+  font-size: 24px;
+}
+
+.starting-text {
+  font-size: 14px;
+}
+
+.jumbotron {
+  background-color: #f4f5f6;
+  border-radius: 0;
+}
+
+.newsletter-sec-main-title {
+  color: #f72210;
+}
+
 /* Footer */
 
 .copyright-line {
@@ -359,6 +438,35 @@ ul {
 .featured-stories-text {
   color: #333;
   font-size: 12px;
+}
+
+.mag-cover-cont {
+  height: 200px;
+}
+
+.mag-cover {
+  left: 100px;
+  top: -5px;
+  position: absolute;
+}
+
+.book-1 {
+  top: -15px;
+  left: 25px;
+}
+
+.book-1,
+.mag-cover {
+  height: 180px;
+}
+
+.newslt-img {
+  background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+  padding-left: 100%;
 }
 
 /* tablet */
@@ -431,6 +539,37 @@ ul {
   .navbar-toggler-icon {
     display: none;
   }
+
+  .btm-img-cont {
+    height: 80%;
+  }
+
+  .btm-img {
+    object-fit: cover;
+  }
+
+  .newslt-img {
+    padding-top: 30%;
+    padding-left: 50%;
+  }
+
+  .mag-cover-cont {
+    padding: 0 90px 13px 0;
+  }
+
+  .mag-cover {
+    left: 80px;
+    top: 20px;
+  }
+
+  .book-1 {
+    top: 10px;
+    left: 20px;
+  }
+
+  .book-text {
+    display: block;
+  }
 }
 
 /* desktop */
@@ -488,5 +627,29 @@ ul {
 
   .navbar-toggler-icon {
     display: none;
+  }
+
+  .jumbotron {
+    height: 340px;
+  }
+
+  .newslt-img {
+    padding-top: 100%;
+    padding-left: 50%;
+  }
+
+  .book-1,
+  .mag-cover {
+    height: 230px;
+  }
+
+  .book-1 {
+    top: -30px;
+    left: 25px;
+  }
+
+  .mag-cover {
+    top: -15px;
+    left: 85px;
   }
 }
