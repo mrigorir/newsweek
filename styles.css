@@ -11,14 +11,25 @@ h6 {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: inherit;
 }
 
-/* I changed here */
 body {
   background-color: #f4f5f6;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider {
+  border-top: solid 4px #ccc;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
 }
 
 img.position-absolute {
@@ -28,12 +39,24 @@ img.position-absolute {
   height: 13rem;
 }
 
-nav {
-  font-family: 'Roboto Condensed', sans-serif;
+.m-less {
+  margin-top: -17px;
 }
 
-.date {
-  font-size: 16px;
+.pad {
+  margin-top: 10px;
+}
+
+nav,
+.article-title,
+.main-titles,
+.ups,
+.debate-title,
+.debate-text,
+.debate-card-title,
+.newsletter-title,
+.featured-stories-title {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 nav a {
@@ -68,7 +91,6 @@ nav button {
   display: none;
   box-sizing: border-box;
   background-color: white;
-  border-bottom: solid 2px #eee;
   font-size: 19px;
 }
 
@@ -135,10 +157,22 @@ ul a {
   max-width: 50px;
 }
 
+.nav3,
+.nav4 {
+  border-bottom: solid 2px #eee;
+}
+
 .nav4 ul a {
-  border: 0;
+  border-right: 0;
   color: #807f84;
   margin: 0 7px 0 7px;
+}
+
+.debate-title a:hover,
+.debate-card-title a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+  color: black;
 }
 
 .nav4 ul :first-child a {
@@ -172,6 +206,130 @@ ul {
   color: white;
 }
 
+/* Main columns */
+
+.img span {
+  top: -25px;
+}
+
+.img span,
+.mid-cntr-img span {
+  position: relative;
+  color: #f72210;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.img span,
+.ranking {
+  font: bold 15px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.mid-cntr-img span {
+  background-color: #c2d4d7;
+  padding: 2px 6px;
+  font-size: 11px;
+  top: -22px;
+}
+
+.img-fluidd {
+  object-fit: cover;
+}
+
+.roow {
+  border-bottom: 3px rgb(179, 179, 179) solid;
+}
+
+.roow :first-child {
+  margin-right: 5px;
+}
+
+.ups {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 7px;
+  letter-spacing: 1px;
+  position: relative;
+  right: -148px;
+  bottom: 14px;
+}
+
+.main-titles {
+  font-size: 16px;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.article-title {
+  font-size: 21px;
+  line-height: 23px;
+}
+
+.article-summary-text {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.debate-title {
+  font-size: 15px;
+  color: #000;
+}
+
+.debate-text {
+  color: #555;
+  font-size: 13px;
+}
+
+.debate-card-title {
+  font-size: 20px;
+  color: black;
+}
+
+.debate-card-text {
+  color: #333;
+  font-size: 13px;
+}
+
+#mini-newsletter {
+  background-color: #f4f5f6;
+  padding: 20px 20px 5px 20px;
+  border: solid 1px #ddd;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.newsletter-icon {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url('https://web.archive.org/web/20210120125445im_/https://g.newsweek.com/www/images/logo-n1.svg') center/contain no-repeat #f72210;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
+.newsletter-title {
+  color: #333;
+  font-size: 16px;
+}
+
+.newsletter-submit {
+  background-color: #f61602;
+  padding: 3px 10px;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.my-turn__links:hover {
+  color: rgba(3, 3, 3, 0.5);
+}
+
 /* Footer */
 
 .copyright-line {
@@ -191,6 +349,88 @@ ul {
   color: #999;
   font-size: 28px;
   margin: 0 5px 0 5px;
+}
+
+.featured-stories-title {
+  color: #000;
+  font-size: 20px;
+}
+
+.featured-stories-text {
+  color: #333;
+  font-size: 12px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  main {
+    margin: 0;
+  }
+
+  .top-story1 {
+    display: none;
+  }
+
+  .top-story2 {
+    display: block;
+  }
+
+  .colu {
+    flex-flow: row;
+  }
+
+  .ups {
+    right: 14px;
+  }
+
+  img.position-absolute {
+    left: 50px;
+    top: 110px;
+    z-index: 0;
+    height: 13rem;
+  }
+
+  .fa-user {
+    display: none;
+  }
+
+  .nav1 form a {
+    display: inline;
+  }
+
+  .gathering {
+    width: 100%;
+  }
+
+  .center {
+    position: sticky;
+    width: 55%;
+    margin: 15px;
+  }
+
+  .my-turn__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .left {
+    width: 35%;
+    margin: 15px;
+  }
+
+  .cardss {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .pics {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggler-icon {
+    display: none;
+  }
 }
 
 /* desktop */
@@ -216,6 +456,15 @@ ul {
     margin: 15px;
   }
 
+  .pad {
+    margin-top: 0;
+  }
+
+  .ups {
+    bottom: 14px;
+    right: 3px;
+  }
+
   .left {
     width: 35%;
     margin: 15px;
@@ -235,15 +484,6 @@ ul {
 
   .nav4 {
     display: block;
-  }
-
-  .pics {
-    flex-flow: row;
-    flex-wrap: wrap;
-  }
-
-  .pic {
-    width: 30%;
   }
 
   .navbar-toggler-icon {
