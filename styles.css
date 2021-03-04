@@ -59,7 +59,9 @@ nav,
 .debate-text,
 .debate-card-title,
 .newsletter-title,
-.featured-stories-title {
+.featured-stories-title,
+.magazine-main-title,
+.cover {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -333,6 +335,77 @@ ul {
 .my-turn__links:hover {
   color: rgba(3, 3, 3, 0.5);
 }
+
+/* Magazine sections */
+
+.magazine-main-title {
+  color: #333;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.bg-gray {
+  background-color: #f4f5f6;
+}
+
+.cart-text-content {
+  margin-top: -15px;
+}
+
+.img span.text-overlay {
+  top: -29.5px;
+}
+
+.cover {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+.cover-news__link {
+  font: bold 15px/26px "Roboto Condensed",sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cover-news__link:hover {
+  color: #f61602;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
